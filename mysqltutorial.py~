@@ -1,0 +1,11 @@
+"""
+sql code can be found here:
+http://www.newthinktank.com/2014/08/mysql-video-tutorial/
+"""
+
+import sqlalchemy
+
+mysqlengine=sqlalchemy.create_engine("mysql://user:password@server")
+mysqlengine.execute("CREATE DATABASE IF NOT EXISTS test3;")
+mysqlengine.execute("USE test3")
+print mysqlengine
